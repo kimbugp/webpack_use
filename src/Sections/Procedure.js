@@ -11,12 +11,12 @@ class Procedure extends Component {
     axios
       .get("/procedures.json")
       .then(res => {
-        // console.log(res)
         this.setState({
           procedures: res.data.slice(0, 3)
         });
       })
       .catch(err => {
+
         console.log(err);
       });
   }

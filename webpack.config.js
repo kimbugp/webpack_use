@@ -15,6 +15,11 @@ module.exports = {
       chunks: "all"
     }
   },
+  performance: {
+    maxAssetSize: 1050000,
+    maxEntrypointSize: 2740000,
+    hints: "error"
+  },
   module: {
     rules: [
       {
